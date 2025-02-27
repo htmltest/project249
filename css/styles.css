@@ -1,0 +1,255 @@
+@font-face{font-family:"OpenSans";src:url("fonts/OpenSans/OpenSans-Regular.woff") format("woff"); font-weight:normal; font-style:normal; font-display:swap}
+@font-face{font-family:"OpenSans";src:url("fonts/OpenSans/OpenSans-Bold.woff") format("woff"); font-weight:bold; font-style:normal; font-display:swap}
+@font-face{font-family:"SourceSerifPro";src:url("fonts/SourceSerifPro/SourceSerifPro-Italic.woff") format("woff"); font-weight:normal; font-style:italic; font-display:swap}
+
+.land-g-shaving-wrapper,
+.land-g-shaving-wrapper *,
+.land-g-shaving-wrapper *::before,
+.land-g-shaving-wrapper *::after {outline:none; box-sizing:border-box; font-family:Arial, sans-serif; font-weight:normal; letter-spacing:0}
+
+.land-g-shaving-wrapper {background:#FFFFFF; position:relative; overflow:hidden; width:100%}
+.land-g-shaving-wrapper-full {margin:0 0 -72px 0}
+
+.land-g-shaving-container {margin:0 auto; max-width:1220px}
+
+@media (max-width:1219px) {
+    .land-g-shaving-container {padding:0 10px}
+}
+
+.land-g-shaving-welcome {position:relative; display:flex; align-items:center; justify-content:center; height:643px; background:url(../img/land-g-shaving-welcome.jpg) no-repeat center; background-size:cover}
+.land-g-shaving-welcome::before {content:""; position:absolute; left:0; top:0; bottom:0; right:50%; margin-right:-222px; background:linear-gradient(90deg, #000000 -9.36%, rgba(0, 0, 0, 0.76) 49.46%, rgba(0, 0, 0, 0) 100%)}
+.land-g-shaving-welcome .land-g-shaving-container {position:relative; width:100%}
+.land-g-shaving-welcome-title {max-width:611px; font:54px/70px OpenSans, sans-serif; color:#FFFFFF}
+.land-g-shaving-welcome-title span {display:block; margin:5px 0 0 0; font:italic 58px/70px SourceSerifPro, sans-serif}
+.land-g-shaving-welcome-btn {margin:40px 0 0 0; display:flex}
+.land-g-shaving-welcome-btn a {display:flex; align-items:center; justify-content:center; border:1px solid #FFFFFF; padding:0 20px; color:#FFFFFF; font-size:16px; line-height:16px; height:46px; border-radius:5px; text-decoration:none; transition:background 0.2s, color 0.2s, border-color 0.2s}
+@media (min-width:1220px) {
+    .land-g-shaving-welcome-btn a:hover {color:#FFFFFF; border-color:#BB442A; background:#BB442A}
+}
+
+@media (max-width:1219px) {
+    .land-g-shaving-welcome {height:463px; display:block; text-align:center; background:url(../img/land-g-shaving-welcome-mobile.jpg) no-repeat center; background-size:cover}
+    .land-g-shaving-welcome::before {right:0; margin-right:0; background:linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 40.28%)}
+    .land-g-shaving-welcome .land-g-shaving-container {height:463px; display:flex; justify-content:space-between; flex-direction:column}
+    .land-g-shaving-welcome-title {max-width:none; font-size:30px; line-height:39px; margin:20px 0 0 0}
+    .land-g-shaving-welcome-title span {margin:2px 0 0 0; font-size:30px; line-height:36px}
+    .land-g-shaving-welcome-btn {margin:0 0 10px 0; display:block}
+}
+
+.land-g-shaving-menu {margin:20px 0 0 0; font:16px/21px OpenSans, sans-serif}
+.land-g-shaving-menu-list {display:flex; justify-content:space-between; align-items:center}
+.land-g-shaving-menu-item a {color:#747474; text-decoration:none}
+.land-g-shaving-menu-item a:hover {text-decoration:underline}
+.land-g-shaving-menu-sep {width:1px; height:21px; background:#E8E7E2}
+
+@media (max-width:1219px) {
+    .land-g-shaving-menu {display:none}
+}
+
+.land-g-shaving-techs {padding:120px 0 140px 0}
+.land-g-shaving-techs-title {text-align:center; font:48px/62px OpenSans, sans-serif; color:#14243A}
+.land-g-shaving-techs-title span {font:italic 54px/70px SourceSerifPro, sans-serif}
+.land-g-shaving-techs-list {margin:40px 0 0 0}
+.land-g-shaving-techs-list .swiper-wrapper {display:block}
+.land-g-shaving-techs-list .swiper-slide {width:100%; height:auto; margin:40px 0 0 0}
+.land-g-shaving-techs-item {display:flex; align-items:center; justify-content:space-between}
+.land-g-shaving-techs-list .swiper-slide:nth-child(even) .land-g-shaving-techs-item {flex-direction:row-reverse}
+.land-g-shaving-techs-item-img {min-width:calc(50% - 20px); max-width:calc(50% - 20px)}
+.land-g-shaving-techs-item-img img {display:block; width:100%}
+.land-g-shaving-techs-item-content {min-width:calc(50% - 20px); max-width:calc(50% - 20px)}
+.land-g-shaving-techs-item-title {font:36px/47px OpenSans, sans-serif; color:#14243A}
+.land-g-shaving-techs-item-title span {font:italic 40px/52px SourceSerifPro, sans-serif}
+.land-g-shaving-techs-item-text {margin:20px 0 0 0; font:24px/36px OpenSans, sans-serif; color:#14243A}
+.land-g-shaving-techs-list .swiper-button-prev,
+.land-g-shaving-techs-list .swiper-button-next {display:none}
+
+@media (max-width:1219px) {
+    .land-g-shaving-techs {padding:80px 0}
+    .land-g-shaving-techs-title {font-size:30px; line-height:39px}
+    .land-g-shaving-techs-title span {display:block; font-size:34px; line-height:41px; margin:2px 0 0 0}
+    .land-g-shaving-techs-list {margin:40px -10px 0 -10px; position:relative}
+    .land-g-shaving-techs-list .swiper-wrapper {display:flex}
+    .land-g-shaving-techs-list .swiper-slide {margin:0}
+    .land-g-shaving-techs-item {display:block; padding:0 10px}
+    .land-g-shaving-techs-item-img {min-width:0; max-width:none; padding:0 18px}
+    .land-g-shaving-techs-item-content {min-width:0; max-width:none; text-align:center; margin:20px 0 0 0}
+    .land-g-shaving-techs-item-title {font-size:20px; line-height:26px}
+    .land-g-shaving-techs-item-title span {font-size:24px; line-height:31px; display:block; margin:2px 0 0 0}
+    .land-g-shaving-techs-item-text {margin:10px 0 0 0; font-size:15px; line-height:23px}
+    .land-g-shaving-techs-list .swiper-button-prev,
+    .land-g-shaving-techs-list .swiper-button-next {position:absolute; display:flex; align-items:center; justify-content:center; z-index:2; top:25.15vw; width:36px; height:36px; border:none; border-radius:50%; margin:-18px 0 0 0; padding:0; outline:none; -webkit-appearance:none; cursor:pointer; background:rgba(255, 255, 255, 0.6); transform:none; opacity:1; box-shadow:0px 0px 15px rgba(0, 0, 0, 0.1)}
+    .land-g-shaving-techs-list .swiper-button-prev::after,
+    .land-g-shaving-techs-list .swiper-button-next::after {display:none}
+    .land-g-shaving-techs-list .swiper-button-prev {left:10px}
+    .land-g-shaving-techs-list .swiper-button-next {right:10px}
+    .land-g-shaving-techs-list .swiper-button-prev svg,
+    .land-g-shaving-techs-list .swiper-button-next svg {display:block; width:24px; height:24px}
+}
+
+.land-g-shaving-functions {padding:120px 0; background:#E8E7E2}
+.land-g-shaving-functions-title {text-align:center; font:48px/62px OpenSans, sans-serif; color:#001F39}
+.land-g-shaving-functions-title span {font:italic 54px/70px SourceSerifPro, sans-serif}
+.land-g-shaving-functions-list {margin:40px -10px 0 -10px}
+.land-g-shaving-functions-list .swiper-slide {min-width:33.33%; max-width:33.33%}
+.land-g-shaving-functions-item {padding:0 10px; position:relative}
+.land-g-shaving-functions-item-bg img {display:block; width:100%}
+.land-g-shaving-functions-item-content {position:absolute; left:10px; top:20px; right:10px; bottom:20px; display:flex; align-items:center; justify-content:space-between; text-align:center; flex-direction:column}
+.land-g-shaving-functions-item-icon img {display:block; width:80px}
+.land-g-shaving-functions-item-title {font:bold 24px/31px OpenSans, sans-serif; color:#FFFFFF}
+.land-g-shaving-functions-list .swiper-button-prev,
+.land-g-shaving-functions-list .swiper-button-next {display:none}
+.land-g-shaving-functions-video {margin:40px 0 0 0; position:relative; padding:56.24% 0 0 0}
+.land-g-shaving-functions-video-preview {position:absolute; left:0; top:0; right:0; bottom:0; display:flex; align-items:center; justify-content:center; background:url(../img/land-g-shaving-functions-video-preview.jpg) no-repeat center; background-size:cover}
+.land-g-shaving-functions-video-preview svg {display:block; width:200px; height:200px; fill:#FFFFFF; transition:fill 0.2s}
+@media (min-width:1220px) {
+    .land-g-shaving-functions-video-preview:hover svg {fill:#BB442A}
+}
+.land-g-shaving-functions-video video {position:absolute; left:0; top:0; width:100%; height:100%}
+
+@media (max-width:1219px) {
+    .land-g-shaving-functions {padding:80px 0}
+    .land-g-shaving-functions-title {font-size:30px; line-height:39px}
+    .land-g-shaving-functions-title span {display:block; font-size:34px; line-height:41px; margin:2px 0 0 0}
+    .land-g-shaving-functions-list {margin:40px -10px 0 -10px; position:relative}
+    .land-g-shaving-functions-list .swiper-slide {min-width:100%; max-width:100%}
+    .land-g-shaving-functions-item {display:block; padding:0 28px}
+    .land-g-shaving-functions-item-title {font-weight:normal; font-size:24px; line-height:31px}
+    .land-g-shaving-functions-list .swiper-button-prev,
+    .land-g-shaving-functions-list .swiper-button-next {position:absolute; display:flex; align-items:center; justify-content:center; z-index:2; top:50%; width:36px; height:36px; border:none; border-radius:50%; margin:-18px 0 0 0; padding:0; outline:none; -webkit-appearance:none; cursor:pointer; background:rgba(255, 255, 255, 0.6); transform:none; opacity:1; box-shadow:0px 0px 15px rgba(0, 0, 0, 0.1)}
+    .land-g-shaving-functions-list .swiper-button-prev::after,
+    .land-g-shaving-functions-list .swiper-button-next::after {display:none}
+    .land-g-shaving-functions-list .swiper-button-prev {left:10px}
+    .land-g-shaving-functions-list .swiper-button-next {right:10px}
+    .land-g-shaving-functions-list .swiper-button-prev svg,
+    .land-g-shaving-functions-list .swiper-button-next svg {display:block; width:24px; height:24px}
+    .land-g-shaving-functions-video {margin:40px -10px 0 -10px; padding:56.24vw 0 0 0}
+    .land-g-shaving-functions-video-preview svg {width:100px; height:100px}
+}
+
+.land-g-shaving-eco {padding:140px 60px 0 60px}
+.land-g-shaving-eco-title {text-align:center; font:48px/62px OpenSans, sans-serif; color:#001F39}
+.land-g-shaving-eco-title span {font:italic 54px/70px SourceSerifPro, sans-serif}
+.land-g-shaving-eco-text {margin:20px 0 0 0; text-align:center; font:24px/36px OpenSans, sans-serif; color:#14243A}
+.land-g-shaving-eco-img {margin:40px 0 0 0; position:relative}
+.land-g-shaving-eco-img img {display:block; width:100%}
+.land-g-shaving-eco-img img+img {display:none}
+.land-g-shaving-eco-img-text {position:absolute; left:0; right:0; bottom:38px; text-align:center; font:italic 20px/22px Arial, sans-serif; color:#14243A}
+
+@media (max-width:1219px) {
+    .land-g-shaving-eco {padding:80px 10px 0 10px}
+    .land-g-shaving-eco-title {font-size:30px; line-height:39px}
+    .land-g-shaving-eco-title span {display:block; font-size:34px; line-height:41px; margin:2px 0 0 0}
+    .land-g-shaving-eco-text {margin:20px 0 0 0; max-width:none; font-size:15px; line-height:23px}
+    .land-g-shaving-eco-img {margin:40px 0 0 0; background:#D8D4C5}
+    .land-g-shaving-eco-img img {display:none}
+    .land-g-shaving-eco-img img+img {display:block}
+    .land-g-shaving-eco-img-text {position:relative; left:auto; right:auto; bottom:auto; padding:10px; font-size:13px; line-height:22px}
+}
+
+.land-g-shaving-universal {margin:140px 0 0 0}
+.land-g-shaving-universal-container {position:relative}
+@media (min-width:1220px) {
+    .land-g-shaving-universal.fixed .land-g-shaving-universal-container {position:fixed; left:0; top:0; right:0}
+    .land-g-shaving-wrapper-full .land-g-shaving-universal.fixed .land-g-shaving-universal-container {top:80px}
+}
+.land-g-shaving-universal-title {text-align:center; font:48px/62px OpenSans, sans-serif; color:#001F39}
+.land-g-shaving-universal-title span {font:italic 54px/70px SourceSerifPro, sans-serif}
+.land-g-shaving-universal-text {margin:20px auto 0 auto; text-align:center; font:24px/36px OpenSans, sans-serif; color:#001F39}
+.land-g-shaving-universal-slider {margin:40px 60px 0 60px; position:relative; height:calc(36.45vw * 4)}
+.land-g-shaving-universal-slider::before {content:""; position:absolute; left:-60px; top:18vw; height:24vw; right:-60px; background:#BB452B}
+.land-g-shaving-universal-slider .swiper {width:100%; height:auto}
+.land-g-shaving-universal-slider .swiper-wrapper {transition:transform 0.1s; height:36.45vw; display:block}
+.land-g-shaving-universal-slider .swiper-slide {position:static}
+.land-g-shaving-universal-slider .swiper-button-prev,
+.land-g-shaving-universal-slider .swiper-button-next {display:none}
+.land-g-shaving-universal-slider-item {height:36.45vw; background:no-repeat center; background-size:cover; position:absolute; left:0; top:0; right:0; bottom:0; opacity:0; transition:opacity 0.5s}
+.land-g-shaving-universal-slider-item:first-child {opacity:1}
+
+@media (max-width:1219px) {
+    .land-g-shaving-universal {margin:80px 0 0 0}
+    .land-g-shaving-universal-title {font-size:30px; line-height:39px}
+    .land-g-shaving-universal-title span {display:block; font-size:34px; line-height:41px; margin:2px 0 0 0}
+    .land-g-shaving-universal-text {margin:20px 0 0 0; max-width:none; font-size:15px; line-height:23px}
+    .land-g-shaving-universal-slider {margin:40px 0 0 0; height:auto}
+    .land-g-shaving-universal-slider::before {top:50%; height:auto; bottom:0}
+    .land-g-shaving-universal-slider .swiper {height:auto}
+    .land-g-shaving-universal-slider .swiper-wrapper {display:flex; height:100%}
+    .land-g-shaving-universal-slider-item {height:106.25vw; margin:0 28px; position:relative; left:auto; top:auto; right:auto; bottom:auto; transition:opacity 0.1s}
+    .land-g-shaving-universal-slider .swiper-button-prev,
+    .land-g-shaving-universal-slider .swiper-button-next {position:absolute; display:flex; align-items:center; justify-content:center; z-index:2; top:50%; width:36px; height:36px; border:none; border-radius:50%; margin:-18px 0 0 0; padding:0; outline:none; -webkit-appearance:none; cursor:pointer; background:rgba(255, 255, 255, 0.6); transform:none; opacity:1; box-shadow:0px 0px 15px rgba(0, 0, 0, 0.1)}
+    .land-g-shaving-universal-slider .swiper-button-prev::after,
+    .land-g-shaving-universal-slider .swiper-button-next::after {display:none}
+    .land-g-shaving-universal-slider .swiper-button-prev {left:10px}
+    .land-g-shaving-universal-slider .swiper-button-next {right:10px}
+    .land-g-shaving-universal-slider .swiper-button-prev svg,
+    .land-g-shaving-universal-slider .swiper-button-next svg {display:block; width:24px; height:24px}
+}
+
+.land-g-shaving-catalogue {padding:140px 0 0 0; position:relative; background:#BB452B}
+.land-g-shaving-catalogue-logo {display:flex; justify-content:center}
+.land-g-shaving-catalogue-logo img {width:443px}
+.land-g-shaving-catalogue-title {margin:40px 0 0 0; text-align:center; font:48px/62px OpenSans, sans-serif; color:#FFFFFF}
+.land-g-shaving-catalogue-title span {font:italic 54px/70px SourceSerifPro, sans-serif}
+.land-g-shaving-catalogue-slider {margin:26px 0 0 0; position:relative}
+.land-g-shaving-catalogue-slider .swiper-slider {width:100%}
+.land-g-shaving-catalogue-item {position:relative}
+.land-g-shaving-catalogue-item-img img {display:block; width:100%}
+.land-g-shaving-catalogue-item-img-mobile {display:none}
+.land-g-shaving-catalogue-item-point {position:absolute; top:55.67%; width:0; height:0}
+.land-g-shaving-catalogue-item-point-1 {left:20.78%}
+.land-g-shaving-catalogue-item-point-2 {left:35.26%}
+.land-g-shaving-catalogue-item-point-3 {left:50.78%}
+.land-g-shaving-catalogue-item-point-4 {left:65.93%}
+.land-g-shaving-catalogue-item-point-5 {left:81.09%}
+.land-g-shaving-catalogue-item-point-icon {position:absolute; left:0; top:0; width:60px; height:60px; cursor:pointer; border-radius:50%; background:rgba(255, 255, 255, 0.5); transition:background 0.2s}
+@media (min-width:1220px) {
+    .land-g-shaving-catalogue-item-point-icon:hover {background:rgba(255, 255, 255, 0.8)}
+}
+.land-g-shaving-catalogue-item-point.active .land-g-shaving-catalogue-item-point-icon {background:#FFFFFF}
+.land-g-shaving-catalogue-item-point-icon::before {content:""; position:absolute; left:50%; top:50%; width:20px; height:20px; margin:-10px 0 0 -10px; background:#FFFFFF; border-radius:50%; transition:background 0.2s}
+.land-g-shaving-catalogue-item-point.active .land-g-shaving-catalogue-item-point-icon::before {background:#BB452B}
+.land-g-shaving-catalogue-item-point-popup {display:none; position:absolute; left:30px; bottom:10px; padding:20px; width:241px; background:rgba(255, 255, 255, 0.75); backdrop-filter:blur(7.5px); border-radius:10px 10px 10px 0px}
+.land-g-shaving-catalogue-item-point-popup-left {left:auto; right:-30px; border-radius:10px 10px 0 10px}
+.land-g-shaving-catalogue-item-point-popup-wide {width:301px}
+.land-g-shaving-catalogue-item-point.active .land-g-shaving-catalogue-item-point-popup {display:block}
+.land-g-shaving-catalogue-item-point-popup-title {font:24px/31px Arial, sans-serif; color:#14243A}
+.land-g-shaving-catalogue-item-point-popup-btn {margin:20px 0 0 0}
+.land-g-shaving-catalogue-item-point-popup-btn a {display:flex; align-items:center; justify-content:center; border:1px solid #14243A; color:#14243A; font-size:16px; line-height:16px; height:46px; border-radius:5px; text-decoration:none; transition:background 0.2s, color 0.2s, border-color 0.2s}
+@media (min-width:1220px) {
+    .land-g-shaving-catalogue-item-point-popup-btn a:hover {color:#FFFFFF; border-color:#BB442A; background:#BB442A}
+}
+.land-g-shaving-catalogue-slider .swiper-scrollbar {display:none}
+.land-g-shaving-catalogue-bg {position:absolute; z-index:3; left:0; top:0; pointer-events:none}
+.land-g-shaving-catalogue-bg img {display:block; width:100%}
+.land-g-shaving-catalogue-item-point-popup-mobile {display:none}
+
+@media (max-width:1219px) {
+    .land-g-shaving-catalogue {padding:80px 0 0 0}
+    .land-g-shaving-catalogue-logo img {width:231px}
+    .land-g-shaving-catalogue-title {margin:20px 0 0 0; font-size:30px; line-height:39px}
+    .land-g-shaving-catalogue-title span {display:block; font-size:34px; line-height:41px; margin:2px 0 0 0}
+    .land-g-shaving-catalogue-slider {padding-bottom:114px; background:#C8B6A8}
+    .land-g-shaving-catalogue-slider::after {content:""; z-index:4; position:absolute; left:0; bottom:94px; right:0; height:49px; background:linear-gradient(180deg, rgba(200, 182, 168, 0) 0%, #C8B6A8 70.42%); pointer-events:none}
+    .land-g-shaving-catalogue-item-point-icon {width:36px; height:36px}
+    .land-g-shaving-catalogue-item-point-icon::before {width:12px; height:12px; margin:-6px 0 0 -6px}
+    .land-g-shaving-catalogue-item-point.active .land-g-shaving-catalogue-item-point-popup {display:none}
+    .land-g-shaving-catalogue-item-point-popup-mobile {position:absolute; z-index:5; left:10px; bottom:10px; right:10px; padding:10px; background:rgba(255, 255, 255, 0.75); backdrop-filter:blur(7.5px); border-radius:10px}
+    .land-g-shaving-catalogue-item-point-popup-mobile.active {display:block}
+    .land-g-shaving-catalogue-item-point-popup-title {font-size:15px; line-height:20px; text-align:center}
+    .land-g-shaving-catalogue-item-point-popup-btn {margin:10px 0 0 0}
+    .land-g-shaving-catalogue-item-point-popup-btn a {font-size:15px; line-height:15px; height:45px}
+}
+
+@media (max-width:560px) {
+    .land-g-shaving-catalogue-slider .swiper-slide {width:auto}
+    .land-g-shaving-catalogue-item {min-width:560px; max-width:560px}
+    .land-g-shaving-catalogue-item-img {display:none}
+    .land-g-shaving-catalogue-item-img-mobile {display:block}
+    .land-g-shaving-catalogue-item-img-mobile img {display:block; width:100%}
+    .land-g-shaving-catalogue-item-point {top:47.82%}
+    .land-g-shaving-catalogue-item-point-1 {left:11.71%}
+    .land-g-shaving-catalogue-item-point-2 {left:31.66%}
+    .land-g-shaving-catalogue-item-point-3 {left:51.61%}
+    .land-g-shaving-catalogue-item-point-4 {left:72.23%}
+    .land-g-shaving-catalogue-item-point-5 {left:92.86%}
+}
