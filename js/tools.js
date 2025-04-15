@@ -24,13 +24,9 @@ $(document).ready(function() {
     $('.land-g-shaving-catalogue-item-point-icon').click(function() {
         var curPoint = $(this).parent();
         if (!curPoint.hasClass('active')) {
-            $('.land-g-shaving-catalogue-item-point.active').removeClass('active');
-            curPoint.addClass('active');
+            $('.land-g-shaving-catalogue-item-point').removeClass('active activemobile');
+            curPoint.addClass('active activemobile');
             $('.land-g-shaving-catalogue-item-point-popup-mobile').html(curPoint.find('.land-g-shaving-catalogue-item-point-popup').html());
-            $('.land-g-shaving-catalogue-item-point-popup-mobile').addClass('active');
-        } else {
-            curPoint.removeClass('active');
-            $('.land-g-shaving-catalogue-item-point-popup-mobile').removeClass('active');
         }
     });
 
@@ -48,7 +44,7 @@ $(window).on('load resize', function() {
         if (curSlider.find('.swiper').hasClass('swiper-initialized')) {
             landGShavingTechSwiper.destroy();
         }
-        if ($(window).width() < 1220) {
+        if ($(window).width() < 769) {
             landGShavingTechSwiper = new Swiper(curSlider.find('.swiper')[0], {
                 slidesPerView: 1,
                 autoHeight: true,
@@ -65,7 +61,7 @@ $(window).on('load resize', function() {
         if (curSlider.find('.swiper').hasClass('swiper-initialized')) {
             landGShavingFunctionsSwiper.destroy();
         }
-        if ($(window).width() < 1220) {
+        if ($(window).width() < 769) {
             landGShavingFunctionsSwiper = new Swiper(curSlider.find('.swiper')[0], {
                 slidesPerView: 1,
                 autoHeight: true,
@@ -83,7 +79,7 @@ $(window).on('load resize', function() {
         if (curSlider.find('.swiper').hasClass('swiper-initialized')) {
             landGShavingUniversalSwiper.destroy();
         }
-        if ($(window).width() < 1220) {
+        if ($(window).width() < 769) {
             landGShavingUniversalSwiper = new Swiper(curSlider.find('.swiper')[0], {
                 slidesPerView: 1,
                 navigation: {
@@ -99,12 +95,16 @@ $(window).on('load resize', function() {
         if (curSlider.find('.swiper').hasClass('swiper-initialized')) {
             landGShavingCatalogueSwiper.destroy();
         }
-        if ($(window).width() < 571) {
+        if ($(window).width() < 561) {
             landGShavingCatalogueSwiper = new Swiper(curSlider.find('.swiper')[0], {
                 slidesPerView: 'auto',
                 scrollbar: {
                     el: curSlider.find('.swiper-scrollbar')[0],
-                }
+                },
+                navigation: {
+                    nextEl: curSlider.find('.swiper-button-next')[0],
+                    prevEl: curSlider.find('.swiper-button-prev')[0],
+                },
             });
         }
     });
@@ -115,7 +115,7 @@ $(window).on('load resize scroll', function() {
     var windowScroll = $(window).scrollTop();
 
     $('.land-g-shaving-universal').each(function() {
-        if ($(window).width() > 1219) {
+        if ($(window).width() > 768) {
             var curOffset = 0;
             if ($('.top-bar-menu').length == 1) {
                 curOffset = $('.top-bar-menu').outerHeight();
